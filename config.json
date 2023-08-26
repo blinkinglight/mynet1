@@ -1,0 +1,19 @@
+{
+  "description": "My Network Plugin",
+  "documentation": "https://github.com/blinkinglight/mynet1",
+  "entrypoint": ["/rootfs"],
+  "network": {
+    "type": "host"
+  },
+  "Interface": {
+    "types": ["network"],
+    "socket": "plugin.sock"
+  },
+  "WorkDir": "/work",
+  "Env": [
+    {
+      "name": "LOG_LEVEL",
+      "value": "debug"
+    }
+  ]
+}
